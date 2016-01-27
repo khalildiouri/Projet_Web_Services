@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/HibernateMapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.upem.selling.beans.BookWS" table="book">
+    		<id name="isbn" column="isbn"></id>
+    		<property name="author" column="author" ></property>
+    		<property name="title" column="title" ></property>
+    		<property name="description" column="description" ></property>
+    		<property name="price" column="price" ></property>
+    		<property name="category" column="category" ></property>
+    		<property name="copy_number" column="copy_number" ></property>
+    		<property name="years" column="years" ></property>
+    		<property name="disp" column="disp" ></property>
+    		<property name="borrowed" column="borrowed" ></property>
+    		<property name="etr_user_book" column="etr_user_book"></property>
+    	</class>
+    </hibernate-mapping>

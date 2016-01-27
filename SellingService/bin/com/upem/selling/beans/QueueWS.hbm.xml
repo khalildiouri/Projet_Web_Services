@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/HibernateMapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.upem.selling.beans.QueueWS" table="queue">
+    		<id name="id_queue" column="id_queue">
+    			<generator class="native"></generator>
+    		</id>
+    		<property name="created" column="created" ></property>
+    		<property name="etr_book_queue" column="etr_book_queue"></property>
+    		<property name="etr_user_queue" column="etr_user_queue"></property>
+    	</class>
+    </hibernate-mapping>

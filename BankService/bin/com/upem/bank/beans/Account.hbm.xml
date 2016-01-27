@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/HibernateMapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.upem.bank.beans.Account" table="account">
+    		<id name="id_account" column="id_account"></id>
+    		<property name="number" column="number" ></property>
+    		<property name="name" column="name" ></property>
+    		<property name="balance" column="balance" ></property>
+    		<property name="currency" column="currency" ></property>
+    		<property name="expireDate" column="expireDate"></property>
+    		<property name="iban" column="iban"></property>
+    	</class>
+    </hibernate-mapping>

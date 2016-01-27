@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/HibernateMapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.upem.selling.beans.CommentWS" table="comment">
+    		<id name="id_comment" column="id_comment">
+    			<generator class="native"></generator>
+    		</id>
+    		<property name="content" column="content" ></property>
+    		<property name="etr_book_comment" column="etr_book_comment"></property>
+    		<property name="etr_user_comment" column="etr_user_comment"></property>
+    	</class>
+    </hibernate-mapping>

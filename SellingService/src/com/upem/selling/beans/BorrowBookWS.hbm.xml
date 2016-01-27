@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/HibernateMapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.upem.selling.beans.BorrowBookWS" table="borrowbook">
+    		<id name="id_borrow" column="id_borrow">
+    			<generator class="native"></generator>
+    		</id>
+    		<property name="dateFrom" column="dateFrom" ></property>
+    		<property name="dateTo" column="dateTo"></property>
+			<property name="etr_book_borrow" column="etr_book_borrow"></property>
+			<property name="etr_user_borrow" column="etr_user_borrow"></property>
+    	</class>
+    </hibernate-mapping>
